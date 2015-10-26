@@ -17,7 +17,7 @@ extensions = [
             ]
 
 setup(  name='fbpy',
-        version='0.1.1',
+        version='0.1.2',
         author='marcell marosvolgyi',
         author_email='marcell@noisegate.org',
         url='http://transistorlove.wordpress.com',

@@ -71,7 +71,7 @@ static int vblank_flags;                  /* supports retrace detection? */
 #define yaxis 9
 #define zaxis 18
 
-int fbfd = 1;
+int fbfd = 0;
 struct fb_var_screeninfo orig_vinfo;
 struct fb_var_screeninfo vinfo;
 struct fb_fix_screeninfo finfo;
