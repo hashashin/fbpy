@@ -71,7 +71,7 @@ static int vblank_flags;                  /* supports retrace detection? */
 #define yaxis 9
 #define zaxis 18
 
-int fbfd = 0;
+int fbfd = 1;
 struct fb_var_screeninfo orig_vinfo;
 struct fb_var_screeninfo vinfo;
 struct fb_fix_screeninfo finfo;
@@ -110,7 +110,7 @@ int setup(void)
     //http://stackoverflow.com/questions/4996777/paint-pixels-to-screen-via-linux-framebuffer
     //modified
 
-    fbfd = open("/dev/fb0", O_RDWR);
+    fbfd = open("/dev/fb1", O_RDWR);
     if (!fbfd) {
         fprintf(stderr, "Error: cannot open framebuffer device.\n");
         return FBUTILS_ERROR_GENERAL;
